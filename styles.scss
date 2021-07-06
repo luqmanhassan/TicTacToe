@@ -1,0 +1,56 @@
+$zero: 0px;
+* {
+    margin: $zero;
+    padding: $zero;
+    box-sizing: border-box;
+    color: white;
+    text-align: center;
+}
+
+html {
+    background-image: linear-gradient(red, black, red);
+}
+
+#Main {
+    max-width: 300px;
+    margin: 200px auto;
+    border: 5px solid black;
+    #top {
+        padding: 10px;
+        background-color: black;
+    }
+    #Board {
+        border-top: 5px solid black;
+        border-bottom: 5px solid black;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        overflow: hidden;
+        div {
+            background-color: red;
+            border: 2px solid black;
+            height: 50px;
+            width: 99px;
+        }
+        div:hover {
+            background-color: white;
+            cursor: pointer;
+        }
+    }
+    #bottom {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        button {
+            padding: 5px 30px;
+            background-color: transparent;
+            border: 3px solid white;
+        }
+        button:hover {
+            cursor: pointer;
+            background-color: white;
+            color: black;
+        }
+    }
+}
