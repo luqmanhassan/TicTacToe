@@ -29,6 +29,7 @@
             background-color: red;
             border: 2px solid black;
             height: 50px;
+            width: 99px;
         }
         
         #Board div:hover {
