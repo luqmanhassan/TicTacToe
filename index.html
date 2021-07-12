@@ -11,26 +11,24 @@
 
 <body>
 
-    <div id="Main">
-        <div id="top">
-            <div>
-                <h1>Tic-Tac-Toe</h1>
-            </div>
-            <div id="mssg">Current Player:</div>
+    <div id="Main" class="main">
+        <div id="top" class="main__top">
+            <h1 class="main__h1">Tic-Tac-Toe</h1>
+            <span id="mssg" class="main__span">Current Player:</span>
         </div>
-        <div id="Board">
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
+        <div id="Board" class="main__board">
+            <div class="main__box"></div>
+            <div class="main__box"></div>
+            <div class="main__box"></div>
+            <div class="main__box"></div>
+            <div class="main__box"></div>
+            <div class="main__box"></div>
+            <div class="main__box"></div>
+            <div class="main__box"></div>
+            <div class="main__box"></div>
         </div>
-        <div id="bottom">
-            <button onclick="restart()">Restart</button>
+        <div id="bottom" class="main__bottom">
+            <button onclick="restart()" class="main__btn">Restart</button>
         </div>
     </div>
     <script src="myscript.js"></script>

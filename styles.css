@@ -12,18 +12,18 @@ html {
   background-image: linear-gradient(red, black, red);
 }
 
-#Main {
+.main {
   max-width: 300px;
   margin: 200px auto;
   border: 5px solid black;
 }
 
-#Main #top {
+.main .main__top {
   padding: 10px;
   background-color: black;
 }
 
-#Main #Board {
+.main .main__board {
   border-top: 5px solid black;
   border-bottom: 5px solid black;
   display: -ms-grid;
@@ -33,19 +33,19 @@ html {
   overflow: hidden;
 }
 
-#Main #Board div {
+.main .main__board .main__box {
   background-color: red;
   border: 2px solid black;
   height: 50px;
   width: 99px;
 }
 
-#Main #Board div:hover {
+.main .main__board .main__box:hover {
   background-color: white;
   cursor: pointer;
 }
 
-#Main #bottom {
+.main .main__bottom {
   padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -59,13 +59,13 @@ html {
   background-color: black;
 }
 
-#Main #bottom button {
+.main .main__bottom .main__btn {
   padding: 5px 30px;
   background-color: transparent;
   border: 3px solid white;
 }
 
-#Main #bottom button:hover {
+.main .main__bottom .main__btn:hover {
   cursor: pointer;
   background-color: white;
   color: black;
