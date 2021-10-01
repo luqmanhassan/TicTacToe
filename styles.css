@@ -3,71 +3,21 @@
   padding: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  color: white;
   text-align: center;
 }
 
-html {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(red), color-stop(black), to(red));
-  background-image: linear-gradient(red, black, red);
-}
-
-.main {
-  max-width: 300px;
-  margin: 200px auto;
-  border: 5px solid black;
-}
-
-.main .main__top {
-  padding: 10px;
-  background-color: black;
-}
-
-.main .main__board {
-  border-top: 5px solid black;
-  border-bottom: 5px solid black;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto auto auto;
-      grid-template-columns: auto auto auto;
-  overflow: hidden;
-}
-
-.main .main__board .main__box {
+#main__box {
   background-color: red;
   border: 2px solid black;
-  height: 50px;
-  width: 99px;
+  height: 100px;
 }
 
-.main .main__board .main__box:hover {
+#main__box:hover {
   background-color: white;
   cursor: pointer;
 }
 
-.main .main__bottom {
-  padding: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: black;
-}
-
-.main .main__bottom .main__btn {
-  padding: 5px 30px;
-  background-color: transparent;
-  border: 3px solid white;
-}
-
-.main .main__bottom .main__btn:hover {
-  cursor: pointer;
-  background-color: white;
-  color: black;
+#Board {
+  border: 2px solid black;
 }
 /*# sourceMappingURL=styles.css.map */
