@@ -1,37 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/materialize.min.css"
+      media="screen,projection"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TicTacToe</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
+  <body>
+    <div class="container">
+      <div>
+        <h1>Tic-Tac-Toe</h1>
+        <h4 id="mssg">Current Player:</h4>
+      </div>
 
-    <div id="Main" class="main">
-        <div id="top" class="main__top">
-            <h1 class="main__h1">Tic-Tac-Toe</h1>
-            <span id="mssg" class="main__span">Current Player:</span>
-        </div>
-        <div id="Board" class="main__board">
-            <div class="main__box"></div>
-            <div class="main__box"></div>
-            <div class="main__box"></div>
-            <div class="main__box"></div>
-            <div class="main__box"></div>
-            <div class="main__box"></div>
-            <div class="main__box"></div>
-            <div class="main__box"></div>
-            <div class="main__box"></div>
-        </div>
-        <div id="bottom" class="main__bottom">
-            <button onclick="restart()" class="main__btn">Restart</button>
-        </div>
+      <div id="Board" class="row">
+        <div id="main__box" class="col s4 m4 l4"></div>
+        <div id="main__box" class="col s4 m4 l4"></div>
+        <div id="main__box" class="col s4 m4 l4"></div>
+        <div id="main__box" class="col s4 m4 l4"></div>
+        <div id="main__box" class="col s4 m4 l4"></div>
+        <div id="main__box" class="col s4 m4 l4"></div>
+        <div id="main__box" class="col s4 m4 l4"></div>
+        <div id="main__box" class="col s4 m4 l4"></div>
+        <div id="main__box" class="col s4 m4 l4"></div>
+      </div>
+
+      <div>
+        <a
+          class="waves-effect waves-light btn #d50000 red accent-4"
+          onclick="restart()"
+          ><i class="material-icons left">autorenew</i>Restart</a
+        >
+      </div>
     </div>
-    <script src="myscript.js"></script>
-</body>
 
+    <script src="myscript.js"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+  </body>
 </html>
